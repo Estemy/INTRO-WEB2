@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Contáctanos!</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Haz tu pedido a través de este formulario</h1>
+    </header>
+
+    <main>
+        <section>
+            <form action="https://formsubmit.co/lorenaraygoza0904@email.com" method="POST" />
+                 <fieldset>
+                    <legend>Datos básicos de contacto</legend>
+                        <label for="Nombre"> Nombre:</label>
+                        <input id="Nombre" type="text" placeholder="Lorena" name="nombres">
+                        <br>
+                        <label for="apellido"> Apellido :</label> 
+                        <input id="apellido" type="text" placeholder="Raygoza"
+                        name="apellido">
+                        <br>
+                        <label for="email"> Correo electrónico:</label> 
+                        <input id="email" type="email" 
+                        placeholder="Lorenaraygoza@gmail.com" required name="correo">
+                        <br>
+                        <label for="numero-telefonico"> Teléfono: </label> <input id="numero-telefonico" placeholder="6951111111" name="numero-telefonico">
+                </fieldset>
+                <fieldset>
+                    <legend>Datos del pedido</legend>
+                    <span><strong>El número mínimo de tamales para hacer pedido es de 15 piezas y el máximo son 300. Anticipe su pedido ya que se reciben pedidos mínimo 4 días antes de su evento.</strong></span>
+                    <br>
+                    Número de tamales: <input name="numDeTamales" type="number" min="15" max="300">
+                    <br>
+                    Fecha de entrega: <input name="fechaDeEntrega" type="date">
+                </fieldset>
+                <fieldset>
+                    <legend> Datos del envío </legend>
+                    <!-- El atributo name hace que los input esten en grupo y solo deje seleccionar uno a la vez, por lo que debe ser igual para los input necesarios -->
+                    <label for="recoger-sucursal"><input id="recoger-sucursal" type="radio" name="tipo-de-envio">Recoger en sucursal</label>
+                    <label for="recoger-delivery"><input id="recoger-delivery" type="radio" name="tipo-de-envio">Delivery</label>
+                    <label for="recoger-domicilio"><input id="recoger-domicilio" type="radio" name="tipo-de-envio">Envio a domicilio</label>
+                    <br>
+                    <select name="" id="">
+                        <option value="sucursal-coyoacan">Sucursal Coyoacán</option>
+                        <option value="sucursal-mazatlan">Sucursal Mazatlán </option>
+                        <option value="sucursal-san-martin-de-las-flores">Sucursal San Martín de las Flores</option>
+                        <option value="sucursal-xochimilco">Sucursal Xochimilco</option>
+                        <option value="sucursal-satélite">Sucursal Satélite</option>
+                        <option value="sucursal-ecatepec">Sucursal Ecatepec</option>
+                        <option value="sucursal-guadalajara">Sucursal Guadalajara</option>
+                        <option value="sucursal-waverly-place">Sucursal Waverly Place</option>
+                    </select>
+                    <br>
+                    Por favor escoge una sucursal<input list="sucursal" name="sucursal" >
+                    <datalist id="sucursal">
+                        <option value="Sucursal Coyoacán"></option>
+                        <option value="Sucursal Mazatlán"></option>
+                        <option value="Sucursal San Martín de las Flores"></option>
+                        <option value="Sucursal Xochimilco"></option>
+                        <option value="Sucursal Satélite"></option>
+                        <option value="Sucursal Ecatepec"></option>
+                        <option value="Sucursal Guadalajara"></option>
+                        <option value="Sucursal Waverly Place"></option>
+                    </datalist>
+                    <br>
+                    <!-- Casilla de verificacion -->
+                    <input type="checkbox" required>Acepto terminos y condiciones
+                    <br>
+                    <!-- input type submit -->
+                    <button type="submit">Enviar</button> <!-- etiqueta para un boton -->
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
